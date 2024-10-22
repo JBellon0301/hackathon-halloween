@@ -26,13 +26,13 @@ export const Header = () => {
                             <Flex paddingX="2">{home.label}</Flex>
                         </ToggleButton>
                     )}
-                    {routes['/about'] && (
+                    {/* {routes['/'] && (
                         <ToggleButton
-                            href={`/${params?.locale}/about`}
-                            selected={pathname === "/about"}>
+                            href={`/${params?.locale}/`}
+                            selected={pathname === "/"}>
                             <Flex paddingX="2">{about.label}</Flex>
                         </ToggleButton>
-                    )}
+                    )} */}
                     {/* Ícono en el medio como ToggleButton */}
                     <ToggleButton
                         href={`/`} // Cambia esto a la ruta deseada
@@ -40,18 +40,18 @@ export const Header = () => {
                     >
                         <img src="/images/favicon.png" alt="Icon" className="w-8 h-8" style={{ width: '24px', height: '24px' }} />
                     </ToggleButton>
-                    {routes['/blog'] && (
+                    {/* {routes['/'] && (
                         <ToggleButton
-                            href={`/${params?.locale}/blog`}
-                            selected={pathname.startsWith('/blog')}>
+                            href={`/${params?.locale}/`}
+                            selected={pathname.startsWith('/')}>
                             <Flex paddingX="2">{blog.label}</Flex>
                         </ToggleButton>
-                    )}
+                    )} */}
                     {routes['/gallery'] && (
                         <ToggleButton
                             href={`/${params?.locale}/gallery`}
                             selected={pathname.startsWith('/gallery')}>
-                            <Flex paddingX="2">{gallery.label}</Flex>
+                            <Flex paddingX="2">Criaturas</Flex>
                         </ToggleButton>
                     )}
                 </Flex>

@@ -17,8 +17,8 @@ const ImageBlock: React.FC<ImageBlockProps> = ({ image, title, description, link
       <img src={image} alt={title} className={styles.image} />
       <div className={styles.overlay}>
         <h2 className={styles.title}>{title}</h2>
-        <p className={styles.description}>{description}</p>
-        <Link href={link} className={styles.button}>
+        <p className={styles.description}></p>
+        <Link href={'/gallery'} className={styles.button}>
           Conocer Más
         </Link>
       </div>
